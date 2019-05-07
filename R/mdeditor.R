@@ -7,7 +7,6 @@
 #' @examples mdeditor()
 
 
-
 mdeditor <- function(){
   browseURL(url="https://go.mdeditor.org/#/dashboard",
             browser=NULL)
