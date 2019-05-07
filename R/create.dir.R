@@ -64,5 +64,3 @@ create.dir <- function(dir, proj) {
 
 }
 
-
-
