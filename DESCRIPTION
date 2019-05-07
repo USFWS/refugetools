@@ -1,0 +1,11 @@
+Package: refugetools
+Type: Package
+Title: A collection of functions for Alaska Refuge biologists
+Version: 0.1.0
+Author: McCrea Cobb
+Maintainer: McCrea Cobb <mccrea_cobb@fws.gov>
+Description: A collection of functions for Alaska Refuge biologists. This package includes a function to generate a file directory template for a new FWS Refuge survey project. Includes a function to generate a metadata template files.
+License: None
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
