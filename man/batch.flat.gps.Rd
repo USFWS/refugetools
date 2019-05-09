@@ -2,28 +2,33 @@
 % Please edit documentation in R/batch.flat.gps.R
 \name{batch.flat.gps}
 \alias{batch.flat.gps}
-\title{Reformats raw Telonics GPS collar data}
+\title{Tidy up Telonics GPS collar data}
 \usage{
-batch.flat.gps(iridium_csv.dir, save.file, save.dir, returnx, pattern)
+batch.flat.gps(iridium_csv.dir, collprogsfile, save.file, save.name,
+  returnx, pattern)
 }
 \arguments{
-\item{iridium_csv.dir}{The directory location of the Iridium csv file to reformat.}
+\item{iridium_csv.dir}{The file directory path to a folder containing Iridium csv file to reformat.}
 
-\item{save.file}{Whether to save the output file.}
+\item{collprogsfile}{The file directory path to an Rdat file that contains information on the file schedules of individual GPS collars.}
 
-\item{save.dir}{The directory location of the output file.}
+\item{save.file}{If \code{TRUE}, saves an output file.}
 
-\item{returnx}{Whether to return a dataframe of the output.}
+\item{save.name}{The file directory path of the output file (if \code{save.file=TRUE}).}
+
+\item{returnx}{If \code{TRUE}, returns a dataframe of the output into the workspace.}
 
 \item{pattern}{The pattern of the input csv file.}
 }
 \value{
-If returnx=TRUE, returns a dataframe of GPS collar data in tidy format (flat file). If save.file argument=TRUE, saves the outout as a gzip.
+If \code{returnx = TRUE}, returns a dataframe of GPS collar data in tidy format (flat file). If \code{save.file = TRUE}, saves the outout.
 }
 \description{
-A function import and reformat raw Telonics GPS collar datato csv file into a tidy format (flat file) for analysis.
+\code{batch.flat.gps()} imports and reformats raw Telonics GPS collar datato csv file into a tidy format (flat file) for analysis.
 }
 \examples{
 \dontrun{
-batch.flat.gps("./data/raw/iridium_csv", save.file=TRUE, save.dir="../data/derived/telonics", returnx=FALSE, pattern="Complete")}
+batch.flat.gps(iridium_csv.dir="./data/collardata",
+collprogsfile = "./data/tcp.rda", save.file=TRUE,
+save.name="../data/dat.Rdata", returnx=FALSE, pattern="Complete")}
 }

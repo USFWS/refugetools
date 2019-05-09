@@ -10,12 +10,12 @@ A collection of tools for Alaska refuge biologists. It contains three functions:
 }
 \section{create.dir function}{
 
-The create.dir function creates a project working directory.
+ The create.dir function creates a project working directory.
 }
 
 \section{mdeditor function}{
 
-The mdeditor function opens the mdEditor application for creating and editing data and project metadata (json file format).
+ The mdeditor function opens the mdEditor application for creating and editing data and project metadata (json file format).
 }
 
 \section{dublin function}{
