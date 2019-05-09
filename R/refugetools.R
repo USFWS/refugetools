@@ -2,18 +2,18 @@
 #'
 #' A collection of tools for Alaska refuge biologists. It contains three functions: create.dir, mdeditor, and dublin.
 #'
-#'@section create.dir function:
-#' The create.dir function creates a project working directory.
+#' @section create.dir function:
+#'  The create.dir function creates a project working directory.
 #'
-#'@section mdeditor function:
-#' The mdeditor function opens the mdEditor application for creating and editing data and project metadata (json file format).
+#' @section mdeditor function:
+#'  The mdeditor function opens the mdEditor application for creating and editing data and project metadata (json file format).
 #'
-#'@section dublin function:
+#' @section dublin function:
 #'  The dublin function creates a metadata csv file to document the contents of the project working directory.
 #'
-#'@section batch.flat.gps function:
+#' @section batch.flat.gps function:
 #'  The batch.flat.gps function takes raw Telonics GPS collar data file (csv) and outputs a tidy dataframe (flat file).
 #'
-#'@docType package
-#'@name refugetools
+#' @docType package
+#' @name refugetools
 NULL
