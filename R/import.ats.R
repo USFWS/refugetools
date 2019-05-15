@@ -1,7 +1,7 @@
 #' @name import.ats
-#' @title  Import and format ATS Globalstar GPS collar data for analysis
+#' @title  Import and format ATS Globalstar GPS collar data
 #'
-#' @description \code{import.ats()} imports ATS Globalstar data and reformats it for mapping and analyses.
+#' @description \code{import.ats()} imports ATS Globalstar data (txt) and reformats it for visualization and analyses.
 #'
 #' @param file.in The file directory path to a folder containing Iridium csv file to reformat.
 #' @param dir.out The file directory path where to save the formated Rdata file.
