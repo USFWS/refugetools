@@ -5,7 +5,7 @@
 #' @description \code{import.telonics()} imports and reformats raw Telonics GPS collar data from csv file into a tidy format for visualization and analysis.
 #'
 #' @param iridium_csv.dir The file directory path to a folder containing Iridium csv file to reformat.
-#' @param collprogsfile The file directory path to an Rdat file that contains information on the file schedules of individual GPS collars.
+#' @param collprogsfile The file directory path and file name of an Rdat file  containing information on the file schedules of individual GPS collars.
 #' @param save.file If \code{TRUE}, saves an output file.
 #' @param save.name The file directory path of the output file (if \code{save.file=TRUE}).
 #' @param returnx If \code{TRUE}, returns a dataframe of the output into the workspace.

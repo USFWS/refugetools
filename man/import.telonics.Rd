@@ -4,13 +4,19 @@
 \alias{import.telonics}
 \title{Import and format Telonics Iridium GPS collar data}
 \usage{
-import.telonics(iridium_csv.dir, collprogsfile, save.file, save.name,
-  returnx, pattern)
+import.telonics(
+  iridium_csv.dir,
+  collprogsfile,
+  save.file,
+  save.name,
+  returnx,
+  pattern
+)
 }
 \arguments{
 \item{iridium_csv.dir}{The file directory path to a folder containing Iridium csv file to reformat.}
 
-\item{collprogsfile}{The file directory path to an Rdat file that contains information on the file schedules of individual GPS collars.}
+\item{collprogsfile}{The file directory path and file name of an Rdat file  containing information on the file schedules of individual GPS collars.}
 
 \item{save.file}{If \code{TRUE}, saves an output file.}
 
