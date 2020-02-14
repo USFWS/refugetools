@@ -17,7 +17,7 @@ import.ats <- function(file.in, dir.out) {
 
   message("Importing ATS collar data...")
 
-  df <- read.table(file.in, header = TRUE, sep = ",")
+  df <- read.csv(file.in, header = TRUE, sep = ",")
 
   colnames(df) <- c("SerialNum", "Year", "Day", "Hour", "Lat", "Long",
                        "Hdop", "NumSats", "FixTime", "Fix2D3D")
@@ -43,7 +43,7 @@ import.ats <- function(file.in, dir.out) {
   df$Collar <- "ATS"
 
   ## 4. Save it
-  message(paste("Saving to", save.dir))
+  message(paste("Saving to", dir.out))
   save(df, file=dir.out)
 }
 

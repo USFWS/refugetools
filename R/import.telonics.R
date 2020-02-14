@@ -34,10 +34,6 @@ import.telonics <- function(iridium_csv.dir,
         collprogsfile <- collprogsfile
         x <- load(collprogsfile)
         tcp <- get(x)
-        ## load collar schedule reference data
-        #tcp <- read.csv(collprogsfile)
-        #colnames(tcp)[match(c("Aux1","Aux2","Aux3"),colnames(tcp))] <- c("Auxiliary 1","Auxiliary 2","Auxiliary 3")
-        ## Create some bookkeeping objects
         levs1 = c("Resolved QFP", "Resolved QFP (Uncertain)",
                   "Unresolved QFP", "Missing") # types of GPS fixes
         nlevs1 = length(levs1)
@@ -48,7 +44,7 @@ import.telonics <- function(iridium_csv.dir,
         ## read in data as text and convert to data.frame
         x = readLines(myfile)
         ctn = substr(x[8],5,nchar(x[8]))
-        x = read.csv(textConnection(paste0(x[-(1:23)],collapse="\n")),stringsAsFactors=FALSE)
+        x = utils::read.csv(textConnection(paste0(x[-(1:23)],collapse="\n")),stringsAsFactors=FALSE)
         ## retain location data and convert to dataframe
         attr(x,"CTN") = ctn # assign CTN# as attribute
         x = cbind(rep(ctn,nrow(x)),
@@ -118,7 +114,7 @@ import.telonics <- function(iridium_csv.dir,
     }
 
     ## load GPS data file names
-    files = unlist(lapply(iridium_csv.dir, function(x)list.files(x, pattern, full=TRUE)))
+    files = unlist(lapply(iridium_csv.dir, function(x)list.files(x, pattern, full.names=TRUE)))
     ## number of GPS data files
     nfiles = length(files)
     ## extract all CTNs

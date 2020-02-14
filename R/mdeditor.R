@@ -8,7 +8,7 @@
 
 
 mdeditor <- function(){
-  browseURL(url="https://go.mdeditor.org/#/dashboard",
+  utils::browseURL(url="https://go.mdeditor.org/#/dashboard",
             browser=NULL)
   message("Opening mdEditor...")
 }
