@@ -12,12 +12,7 @@ dublin(project, name, email, office)
 \item{name}{Your name.}
 
 \item{email}{You email address.}
-
-\item{office}{The name of your refuge or office.}
 }
 \description{
 A function to create a metadata csv file
-}
-\examples{
-dublin(project= "Haggis Survey", name="John Doe", email="john_doe@fws.gov", office="Haggis Refuge")
 }

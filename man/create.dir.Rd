@@ -2,18 +2,22 @@
 % Please edit documentation in R/create.dir.R
 \name{create.dir}
 \alias{create.dir}
-\title{Creates a file directory for a new refuge I&M project}
+\title{Creates a File Directory for a New Refuge I&M Project}
 \usage{
-create.dir(dir, proj)
+create.dir(proj.name = NULL, dir.name = NULL, more.folders = NULL)
 }
 \arguments{
-\item{dir}{Location to create new project folder.}
+\item{proj.name}{The name of the project to be used as the name of the root project folder.}
 
-\item{proj}{The name of the project, to be used as the name of the root folder.}
+\item{dir.name}{Location to create new root project folder. Default is the current working directory.}
+
+\item{more.folders}{List or vector containing character strings specifying full directory paths for additional
+folders to be included in project directory.}
 }
 \description{
 A function to create a new file directory structure. The directory structure is based off the Alaska I&M biometric project directory template.
 }
 \examples{
-create.dir(getwd(), "bear_survey")
+\dontrun{
+create.dir(proj.name = "bear_survey", dir.name = "./put_it_here", more.folders = NULL)}
 }

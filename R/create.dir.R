@@ -5,12 +5,14 @@
 #'
 #' @param dir.name Location to create new root project folder. Default is the current working directory.
 #' @param proj.name The name of the project to be used as the name of the root project folder.
-#' @param moreFolders List or vector containing character strings specifying full directory paths for additional
+#' @param more.folders List or vector containing character strings specifying full directory paths for additional
 #' folders to be included in project directory.
 #'
-#' @examples create.dir(proj.name = "bear_survey")
+#' @examples 
+#' \dontrun{
+#' create.dir(proj.name = "bear_survey", dir.name = "./put_it_here", more.folders = NULL)}
 
-create.dir <- function(proj.name = NULL, dir.name = NULL, moreFolders = NULL) {
+create.dir <- function(proj.name = NULL, dir.name = NULL, more.folders = NULL) {
 
     ## project name
     if(is.null(proj.name))proj.name = "myproject"
@@ -58,5 +60,5 @@ create.dir <- function(proj.name = NULL, dir.name = NULL, moreFolders = NULL) {
     lapply(f, dir.create)
 
     ## user-provided additional folders to be created
-    if(!is.null(moreFolders))lapply(moreFolders, dir.create)
+    if(!is.null(more.folders)) lapply(more.folders, dir.create)
 }

@@ -9,7 +9,8 @@
 #' @param email You email address.
 #' @param office The name of your refuge or office.
 #'
-#' @examples dublin(project= "Haggis Survey", name="John Doe", email="john_doe@fws.gov", office="Haggis Refuge")
+#' \dontrun{
+#' @examples dublin(project= "Haggis Survey", name="John Doe", email="john_doe@fws.gov", office="Haggis Refuge")}
 
 
 dublin <- function(project, name, email, office){

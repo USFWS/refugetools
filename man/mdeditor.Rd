@@ -10,5 +10,6 @@ mdeditor()
 A function to open mdEditor in a web browser from which to create or edit metadata.
 }
 \examples{
-mdeditor()
+ \dontrun{
+ mdeditor()}
 }

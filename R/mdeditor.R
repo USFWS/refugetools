@@ -4,7 +4,9 @@
 #'
 #' @description A function to open mdEditor in a web browser from which to create or edit metadata.
 #'
-#' @examples mdeditor()
+#' @examples
+#'  \dontrun{
+#'  mdeditor()}
 
 
 mdeditor <- function(){
