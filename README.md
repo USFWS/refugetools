@@ -1,5 +1,12 @@
 # refugetools
 
+## Installation
+```(r)
+
+# install.packages("devtools")
+devtools::install_github("USFWS/refugetools, "refugetools")
+```
+
 ## Description
 A package that contains useful functions for planning and implementing refuge 
 inventory and monitoring projects in Alaska. So far, this includes a function to 
