@@ -7,12 +7,12 @@
 import.ats(file.in, dir.out)
 }
 \arguments{
-\item{file.in}{The file directory path to a folder containing Iridium csv file to reformat.}
+\item{file.in}{The file directory path to a folder containing Iridium csv file to reformat}
 
-\item{dir.out}{The file directory path where to save the formated Rdata file.}
+\item{dir.out}{The file directory path where to save the formated Rdata file}
 }
 \value{
-
+A formatted dataframe
 }
 \description{
 \code{import.ats()} imports ATS Globalstar data (txt) and reformats it for visualization and analyses.
