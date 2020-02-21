@@ -3,10 +3,12 @@
 #'
 #' @description \code{import.ats()} imports ATS Globalstar data (txt) and reformats it for visualization and analyses.
 #'
-#' @param file.in The file directory path to a folder containing Iridium csv file to reformat.
-#' @param dir.out The file directory path where to save the formated Rdata file.
+#' @param file.in The file directory path to a folder containing Iridium csv file to reformat
+#' @param dir.out The file directory path where to save the formated Rdata file
 #'
-#' @return
+#' @return A formatted dataframe
+#' 
+#' @export
 #'
 #' @examples
 #' \dontrun{

@@ -4,6 +4,8 @@
 #'
 #' @description A function to open mdEditor in a web browser from which to create or edit metadata.
 #'
+#' @export
+#'
 #' @examples
 #'  \dontrun{
 #'  mdeditor()}

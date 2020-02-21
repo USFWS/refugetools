@@ -8,6 +8,8 @@
 #' @param name Your name.
 #' @param email You email address.
 #' @param office The name of your refuge or office.
+#' 
+#' @export
 #'
 #' \dontrun{
 #' @examples dublin(project= "Haggis Survey", name="John Doe", email="john_doe@fws.gov", office="Haggis Refuge")}

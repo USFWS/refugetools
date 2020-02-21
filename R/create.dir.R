@@ -8,6 +8,8 @@
 #' @param more.folders List or vector containing character strings specifying full directory paths for additional
 #' folders to be included in project directory.
 #'
+#' @export
+#'
 #' @examples 
 #' \dontrun{
 #' create.dir(proj.name = "bear_survey", dir.name = "./put_it_here", more.folders = NULL)}

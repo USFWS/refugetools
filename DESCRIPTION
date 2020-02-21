@@ -5,9 +5,11 @@ Version: 0.1.0
 Author: McCrea Cobb
 Maintainer: McCrea Cobb <mccrea_cobb@fws.gov>
 Description: A collection of functions for Alaska Refuge biologists. This package includes a functions to generate a file directory template for a new FWS Refuge survey project, to generate a metadata template files, and to import and reformat GPS collar data.
+Depends: R (>= 3.1.0)
 License: CC0
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.0.1
+RoxygenNote: 7.0.2
 Imports: 
-    moveHMM
+    moveHMM,
+    utils

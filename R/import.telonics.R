@@ -13,6 +13,8 @@
 #'
 #' @return If \code{returnx = TRUE}, returns a dataframe of GPS collar data in tidy format (flat file). If \code{save.file = TRUE}, saves the outout.
 #'
+#' @export
+#'
 #' @examples
 #' \dontrun{
 #' import.telonics(iridium_csv.dir="./data/collardata",
