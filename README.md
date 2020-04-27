@@ -13,11 +13,11 @@ Government.
 An R package in development that contains useful functions for planning and implementing Refuge 
 Inventory and Monitoring (I&M) projects in Alaska.
 
-* `create.dir()` Creates a project directory using the Alaska I&M project directory template  
-* `dublin()` Creates a Dublin core metadata file 
-* `mdeditor()` Accesses the mdEditor tool for creating and editing metadata
-* `import.ats()` Imports and formats Telonics Iridium GPS collar data
-* `import.ats()` Imports and formats ATS GlobalStar GPS collar data
+* `create.dir` creates a project directory using the Alaska I&M project directory template  
+* `dublin` creates a Dublin core metadata file 
+* `mdeditor` accesses the mdEditor tool for creating and editing metadata
+* `import.ats` imports and formats Telonics Iridium GPS collar data
+* `import.ats` imports and formats ATS GlobalStar GPS collar data
 
 ## Instructions
 ```(r)
